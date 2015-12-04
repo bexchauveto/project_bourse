@@ -1,1 +1,1 @@
-<?php header("Location: ./controller/controlIndex.php"); ?>
+<?php header("Location: ./controllers/controlIndex.php"); ?>

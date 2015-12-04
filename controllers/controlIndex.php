@@ -1,6 +1,6 @@
 <?php
-include("../view/header.php");
-include("../view/menu.php");
-include("../view/viewIndex.php");
-include("../view/footer.php");
+include("../views/header.php");
+include("../views/menu.php");
+include("../views/viewIndex.php");
+include("../views/footer.php");
 ?>
