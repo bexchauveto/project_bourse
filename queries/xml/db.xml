@@ -58,10 +58,193 @@
             <AnneeCreation>2003</AnneeCreation>
             <Symbole>JPH</Symbole>
             <Logo></Logo>
-            <SiteWeb>http://www.jepharm.ps/</SiteWeb>
+            <SiteWeb>www.jepharm.ps</SiteWeb>
             <PlaceBoursiere>2</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>2</EntrepriseId>
+            <Nom>Palestine Telecommunications</Nom>
+            <Secteur>Télécommunications</Secteur>
+            <AnneeCreation>1997</AnneeCreation>
+            <Symbole>PALTEL</Symbole>
+            <Logo></Logo>
+            <SiteWeb>www.paltel.ps</SiteWeb>
+            <PlaceBoursiere>2</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>3</EntrepriseId>
+            <Nom>Apollo Investment Fund Plc</Nom>
+            <Secteur>Investissements</Secteur>
+            <AnneeCreation>1994</AnneeCreation>
+            <Symbole>APOL</Symbole>
+            <Logo></Logo>
+            <SiteWeb>http://apollofundcyprus.com</SiteWeb>
+            <PlaceBoursiere>3</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>4</EntrepriseId>
+            <Nom>Cyprus Forest Industries Public Ltd</Nom>
+            <Secteur>Matériaux de construction</Secteur>
+            <AnneeCreation>1970</AnneeCreation>
+            <Symbole>CFI</Symbole>
+            <Logo></Logo>
+            <SiteWeb>www.cfi.com.cy</SiteWeb>
+            <PlaceBoursiere>3</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>5</EntrepriseId>
+            <Nom>Salamis Tours (Holdings) Public Ptd</Nom>
+            <Secteur>Tourisme</Secteur>
+            <AnneeCreation>1959</AnneeCreation>
+            <Symbole>SAL</Symbole>
+            <Logo></Logo>
+            <SiteWeb>salamisinternational.com</SiteWeb>
+            <PlaceBoursiere>3</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>6</EntrepriseId>
+            <Nom>Grupo Argos</Nom>
+            <Secteur>Investissements</Secteur>
+            <AnneeCreation>1936</AnneeCreation>
+            <Symbole>ARG</Symbole>
+            <Logo></Logo>
+            <SiteWeb>www.grupoargos.com</SiteWeb>
+            <PlaceBoursiere>4</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>7</EntrepriseId>
+            <Nom>Grupo Aval</Nom>
+            <Secteur>Investissements</Secteur>
+            <AnneeCreation>1997</AnneeCreation>
+            <Symbole>GAA</Symbole>
+            <Logo></Logo>
+            <SiteWeb>www.grupoaval.com</SiteWeb>
+            <PlaceBoursiere>4</PlaceBoursiere>
+        </Entreprise>
+        <Entreprise>
+            <EntrepriseId>8</EntrepriseId>
+            <Nom>Edatel S.A. E.S.P.</Nom>
+            <Secteur>Télécommunications</Secteur>
+            <AnneeCreation>1980</AnneeCreation>
+            <Symbole>EDA</Symbole>
+            <Logo></Logo>
+            <SiteWeb>www.edatel.com.co</SiteWeb>
+            <PlaceBoursiere>4</PlaceBoursiere>
         </Entreprise>
     </Entreprises>
     <Actions>
+        <Action Nom="JPH" Date="2015-12-12">
+            <ActionId>1</ActionId>
+            <ValOuverture>40</ValOuverture>
+            <ValMaximum>43</ValMaximum>
+            <ValMinimum>40</ValMinimum>
+            <ValCloture>42</ValCloture>
+            <NbEchange>70</NbEchange>
+        </Action>
+        <Action Nom="JPH" Date="2015-12-11">
+            <ActionId>2</ActionId>
+            <ValOuverture>50</ValOuverture>
+            <ValMaximum>50</ValMaximum>
+            <ValMinimum>36</ValMinimum>
+            <ValCloture>40</ValCloture>
+            <NbEchange>50</NbEchange>
+        </Action>
+        <Action Nom="JPH" Date="2015-12-10">
+            <ActionId>3</ActionId>
+            <ValOuverture>45</ValOuverture>
+            <ValMaximum>56</ValMaximum>
+            <ValMinimum>45</ValMinimum>
+            <ValCloture>50</ValCloture>
+            <NbEchange>40</NbEchange>
+        </Action>
+        <Action Nom="JPH" Date="2015-12-09">
+            <ActionId>4</ActionId>
+            <ValOuverture>40</ValOuverture>
+            <ValMaximum>48</ValMaximum>
+            <ValMinimum>36</ValMinimum>
+            <ValCloture>45</ValCloture>
+            <NbEchange>33</NbEchange>
+        </Action>
+        <Action Nom="JPH" Date="2015-12-08">
+            <ActionId>5</ActionId>
+            <ValOuverture>36</ValOuverture>
+            <ValMaximum>42</ValMaximum>
+            <ValMinimum>36</ValMinimum>
+            <ValCloture>40</ValCloture>
+            <NbEchange>30</NbEchange>
+        </Action>
+        <Action Nom="JPH" Date="2015-12-07">
+            <ActionId>6</ActionId>
+            <ValOuverture>34</ValOuverture>
+            <ValMaximum>36</ValMaximum>
+            <ValMinimum>29</ValMinimum>
+            <ValCloture>36</ValCloture>
+            <NbEchange>45</NbEchange>
+        </Action>
+        <Action Nom="JPH" Date="2015-12-06">
+            <ActionId>7</ActionId>
+            <ValOuverture>30</ValOuverture>
+            <ValMaximum>35</ValMaximum>
+            <ValMinimum>30</ValMinimum>
+            <ValCloture>34</ValCloture>
+            <NbEchange>40</NbEchange>
+        </Action>
+
+        <Action Nom="PALTEL" Date="2015-12-12">
+            <ActionId>8</ActionId>
+            <ValOuverture>20</ValOuverture>
+            <ValMaximum>22</ValMaximum>
+            <ValMinimum>8</ValMinimum>
+            <ValCloture>10</ValCloture>
+            <NbEchange>107</NbEchange>
+        </Action>
+        <Action Nom="PALTEL" Date="2015-12-11">
+            <ActionId>9</ActionId>
+            <ValOuverture>30</ValOuverture>
+            <ValMaximum>30</ValMaximum>
+            <ValMinimum>16</ValMinimum>
+            <ValCloture>20</ValCloture>
+            <NbEchange>112</NbEchange>
+        </Action>
+        <Action Nom="PALTEL" Date="2015-12-10">
+            <ActionId>10</ActionId>
+            <ValOuverture>45</ValOuverture>
+            <ValMaximum>45</ValMaximum>
+            <ValMinimum>26</ValMinimum>
+            <ValCloture>30</ValCloture>
+            <NbEchange>124</NbEchange>
+        </Action>
+        <Action Nom="PALTEL" Date="2015-12-09">
+            <ActionId>11</ActionId>
+            <ValOuverture>40</ValOuverture>
+            <ValMaximum>48</ValMaximum>
+            <ValMinimum>36</ValMinimum>
+            <ValCloture>45</ValCloture>
+            <NbEchange>133</NbEchange>
+        </Action>
+        <Action Nom="PALTEL" Date="2015-12-08">
+            <ActionId>12</ActionId>
+            <ValOuverture>36</ValOuverture>
+            <ValMaximum>42</ValMaximum>
+            <ValMinimum>36</ValMinimum>
+            <ValCloture>40</ValCloture>
+            <NbEchange>126</NbEchange>
+        </Action>
+        <Action Nom="PALTEL" Date="2015-12-07">
+            <ActionId>13</ActionId>
+            <ValOuverture>54</ValOuverture>
+            <ValMaximum>57</ValMaximum>
+            <ValMinimum>46</ValMinimum>
+            <ValCloture>46</ValCloture>
+            <NbEchange>113</NbEchange>
+        </Action>
+        <Action Nom="PALTEL" Date="2015-12-06">
+            <ActionId>14</ActionId>
+            <ValOuverture>50</ValOuverture>
+            <ValMaximum>56</ValMaximum>
+            <ValMinimum>45</ValMinimum>
+            <ValCloture>54</ValCloture>
+            <NbEchange>120</NbEchange>
+        </Action>
     </Actions>
 </root>
