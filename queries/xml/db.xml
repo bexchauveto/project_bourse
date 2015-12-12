@@ -58,7 +58,7 @@
             <AnneeCreation>2003</AnneeCreation>
             <Symbole>JPH</Symbole>
             <Logo></Logo>
-            <SiteWeb>www.jepharm.ps</SiteWeb>
+            <SiteWeb>http://www.jepharm.ps</SiteWeb>
             <PlaceBoursiere>2</PlaceBoursiere>
         </Entreprise>
         <Entreprise>
@@ -68,7 +68,7 @@
             <AnneeCreation>1997</AnneeCreation>
             <Symbole>PALTEL</Symbole>
             <Logo></Logo>
-            <SiteWeb>www.paltel.ps</SiteWeb>
+            <SiteWeb>http://www.paltel.ps</SiteWeb>
             <PlaceBoursiere>2</PlaceBoursiere>
         </Entreprise>
         <Entreprise>
@@ -88,7 +88,7 @@
             <AnneeCreation>1970</AnneeCreation>
             <Symbole>CFI</Symbole>
             <Logo></Logo>
-            <SiteWeb>www.cfi.com.cy</SiteWeb>
+            <SiteWeb>http://www.cfi.com.cy</SiteWeb>
             <PlaceBoursiere>3</PlaceBoursiere>
         </Entreprise>
         <Entreprise>
@@ -98,7 +98,7 @@
             <AnneeCreation>1959</AnneeCreation>
             <Symbole>SAL</Symbole>
             <Logo></Logo>
-            <SiteWeb>salamisinternational.com</SiteWeb>
+            <SiteWeb>http://salamisinternational.com</SiteWeb>
             <PlaceBoursiere>3</PlaceBoursiere>
         </Entreprise>
         <Entreprise>
@@ -108,7 +108,7 @@
             <AnneeCreation>1936</AnneeCreation>
             <Symbole>ARG</Symbole>
             <Logo></Logo>
-            <SiteWeb>www.grupoargos.com</SiteWeb>
+            <SiteWeb>http://www.grupoargos.com</SiteWeb>
             <PlaceBoursiere>4</PlaceBoursiere>
         </Entreprise>
         <Entreprise>
@@ -118,7 +118,7 @@
             <AnneeCreation>1997</AnneeCreation>
             <Symbole>GAA</Symbole>
             <Logo></Logo>
-            <SiteWeb>www.grupoaval.com</SiteWeb>
+            <SiteWeb>http://www.grupoaval.com</SiteWeb>
             <PlaceBoursiere>4</PlaceBoursiere>
         </Entreprise>
         <Entreprise>
@@ -128,7 +128,7 @@
             <AnneeCreation>1980</AnneeCreation>
             <Symbole>EDA</Symbole>
             <Logo></Logo>
-            <SiteWeb>www.edatel.com.co</SiteWeb>
+            <SiteWeb>http://www.edatel.com.co</SiteWeb>
             <PlaceBoursiere>4</PlaceBoursiere>
         </Entreprise>
     </Entreprises>

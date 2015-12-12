@@ -1,6 +1,6 @@
 <xsl:template name="main">
 	<div class="container">
-		<h1>Liste des étudiants par année : </h1>
+		<h1>Liste des places boursières : </h1>
 		<ul class="list-group">
 		<xsl:apply-templates select="/Bourses" />
 		</ul>
@@ -10,7 +10,7 @@
 <xsl:template match="/Bourses">
 	<li class="list-group-item">
 		<h5>
-			Liste de tous les étudiants.
+			Liste de toutes les bourses.
 		</h5>
 		<table class="table table-hover table-stripped table-bordered">
 			<thead>
@@ -40,5 +40,3 @@
 		</table>
 	</li>
 </xsl:template>
-
-
