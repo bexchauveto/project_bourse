@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Root>
+
+    <!--                                                     ATTENDED COURSES-->
+    <AttendedCourses>
+        <AttendedCourse student="1" course="1" grade="3.14"/>
+        <AttendedCourse student="1" course="10" grade="11"/>
+        <AttendedCourse student="1" course="9" grade="6"/>
+        <AttendedCourse student="2" course="1" grade="19.99"/>
+        <AttendedCourse student="2" course="9" grade="19.9998"/>
+        <AttendedCourse student="2" course="10" grade="13"/>
+        <AttendedCourse student="3" course="1" grade="15.99"/>
+        <AttendedCourse student="3" course="9" grade="14.9998"/>
+        <AttendedCourse student="3" course="10" grade="7"/>
+        <AttendedCourse student="4" course="1" grade="0"/>
+        <AttendedCourse student="4" course="9" grade="14"/>
+        <AttendedCourse student="4" course="10" grade="10"/>
+        <AttendedCourse student="5" course="3" grade="21"/>
+        <AttendedCourse student="5" course="2" grade="20"/>
+        <AttendedCourse student="5" course="8" grade="14"/>
+        <AttendedCourse student="5" course="11" grade="11.5"/>
+        <AttendedCourse student="6" course="3" grade="19.99"/>
+        <AttendedCourse student="6" course="11" grade="8.25"/>
+        <AttendedCourse student="6" course="2" grade="20"/>
+        <AttendedCourse student="6" course="8" grade="11"/>
+        <AttendedCourse student="7" course="4" grade="10"/>
+        <AttendedCourse student="7" course="6" grade="11"/>
+        <AttendedCourse student="7" course="8" grade="17"/>
+        <AttendedCourse student="7" course="8" grade="12"/>
+        <AttendedCourse student="8" course="7" grade="16"/>
+        <AttendedCourse student="8" course="8" grade="7"/>
+    </AttendedCourses>
+
+    <!--                                                             COURSES-->
+    <Courses>
+        <Course id="1" name="Maths" code="MATHS1"/>
+        <Course id="2" name="Algo" code="ALGO1"/>
+        <Course id="3" name="Prog Fonctionnelle" code="MARRE1"/>
+        <Course id="4" name="Bois" code="MATIEREDEGC1"/>
+        <Course id="5" name="Metal" code="BLINDGUARDIAN"/>
+        <Course id="6" name="Béton" code="MATIEREDEGC2"/>
+        <Course id="7" name="Saut à la corde" code="SPORT"/>
+        <Course id="8" name="PPI" code="MATIEREDEGC1"/>
+        <Course id="9" name="Analyse Fonctionnelle" code="ARRACHAGEDETETE-136"/>
+        <Course id="10" name="Espaces Hilbertiens" code="BLBLBLBL446"/>
+        <Course id="11" name="Réseau" code="RES2"/>
+    </Courses>
+
+    <!--                                                            CURSUSES-->
+    <Cursuses>
+        <Cursus id="1">
+            <name>Genie Civil</name>
+        </Cursus>
+        <Cursus id="2">
+            <name>Informatique et Reseaux</name>
+        </Cursus>
+        <Cursus id="3">
+            <name>Sport Etude</name>
+        </Cursus>
+        <Cursus id="4">
+            <name>Genie Mathematique et Modélisation</name>
+        </Cursus>
+    </Cursuses>
+    
+    <!--                                                             DEGREES-->
+    <Degrees>
+        <Degree id="1">
+            <name>Doctoral Student</name>
+        </Degree>
+        <Degree id="2">
+            <name>Teacher</name>
+        </Degree>
+        <Degree id="3">
+            <name>Teacher-Researcher</name>
+        </Degree>
+        <Degree id="4">
+            <name>Professor</name>
+        </Degree>
+    </Degrees>
+
+    <!--                                                           TEACHINGS-->
+    <Teachings>
+        <Teaching teacher="5" course="3">
+            <hours>20</hours>
+        </Teaching>
+        <Teaching teacher="1" course="8">
+            <hours>2</hours>
+        </Teaching>
+        <Teaching teacher="2" course="2">
+            <hours>35</hours>
+        </Teaching>
+        <Teaching teacher="6" course="6">
+            <hours>37</hours>
+        </Teaching>
+        <Teaching teacher="3" course="9">
+            <hours>29</hours>
+        </Teaching>
+        <Teaching teacher="4" course="4">
+            <hours>10</hours>
+        </Teaching>
+        <Teaching teacher="3" course="8">
+            <hours>1</hours>
+        </Teaching>
+        <Teaching teacher="1" course="11">
+            <hours>35</hours>
+        </Teaching>
+        <Teaching teacher="7" course="10">
+            <hours>30</hours>
+        </Teaching>
+        <Teaching teacher="8" course="7">
+            <hours>40</hours>
+        </Teaching>  
+        <Teaching teacher="4" course="5">
+            <hours>42</hours>
+        </Teaching>               
+    </Teachings>
+
+    <!--                                                            TEACHERS-->
+    <Teachers>
+        <Teacher id="1" degree="3">
+            <firstname>Christophe</firstname>
+            <lastname>Chassot</lastname>
+            <birthdate>1974-02-26</birthdate>
+        </Teacher>
+
+        <Teacher id="2" degree="3">
+            <firstname>Patrick</firstname>
+            <lastname>Esquirol</lastname>
+            <birthdate>1962-06-16</birthdate>
+        </Teacher>
+
+        <Teacher id="3" degree="1">
+            <firstname>Pierre</firstname>
+            <lastname>Curie</lastname>
+            <birthdate>1965-01-20</birthdate>
+        </Teacher>
+
+        <Teacher id="4" degree="4">
+            <firstname>Elisa</firstname>
+            <lastname>Letab</lastname>
+            <birthdate>1972-05-26</birthdate>
+        </Teacher>
+
+        <Teacher id="5" degree="3">
+            <firstname>Bernard</firstname>
+            <lastname>Haskell</lastname>
+            <birthdate>1970-01-26</birthdate>
+        </Teacher>
+
+        <Teacher id="6" degree="2">
+            <firstname>Patrick</firstname>
+            <lastname>Sebastien</lastname>
+            <birthdate>1983-01-26</birthdate>
+        </Teacher>
+
+        <Teacher id="7" degree="1">
+            <firstname>Eric</firstname>
+            <lastname>Mac</lastname>
+            <birthdate>1986-06-10</birthdate>
+        </Teacher>
+
+        <Teacher id="8" degree="4">
+            <firstname>Henriette</firstname>
+            <lastname>Gomez</lastname>
+            <birthdate>1970-06-10</birthdate>
+        </Teacher>
+
+    </Teachers>
+
+    <!--                                                             GROUPS-->
+    <Groups>
+        <Group id="1" year="4" name="4 GMM 1" cursus="4"/>
+        <Group id="2" year="4" name="4 GMM 2" cursus="4"/>
+        <Group id="3" year="4" name="4 IR 1" cursus="2"/>
+        <Group id="4" year="4" name="4 GC SE 1" cursus="1"/>
+        <Group id="5" year="3" name="3 MIC B" cursus="3"/>      
+    </Groups>
+
+    <!--                                                             STUDENTS-->
+    <Students>
+        <Student id="1" group="1">
+            <firstname>Jean</firstname>
+            <lastname>Dupont</lastname>
+            <birthdate>1994-02-26</birthdate>
+        </Student>
+
+        <Student id="2" group="1">
+            <firstname>Gary</firstname>
+            <lastname>Tapis</lastname>
+            <birthdate>1994-06-16</birthdate>
+        </Student>
+
+        <Student id="3" group="2">
+            <firstname>Olivier</firstname>
+            <lastname>Van Damme</lastname>
+            <birthdate>1992-01-20</birthdate>
+        </Student>
+
+        <Student id="4" group="2">
+            <firstname>Bernadette</firstname>
+            <lastname>Tude</lastname>
+            <birthdate>1990-10-26</birthdate>
+        </Student>
+
+        <Student id="5" group="3">
+            <firstname>Kévina</firstname>
+            <lastname>Banana</lastname>
+            <birthdate>1993-02-26</birthdate>
+        </Student>
+        
+        <Student id="6" group="3">
+            <firstname>Jean Bernard</firstname>
+            <lastname>Truc</lastname>
+            <birthdate>1996-02-26</birthdate>
+        </Student>
+         
+        <Student id="7" group="4">
+            <firstname>Luc</firstname>
+            <lastname>Etoiles</lastname>
+            <birthdate>1998-02-26</birthdate>
+        </Student>
+         
+        <Student id="8" group="5">
+            <firstname>Taron</firstname>
+            <lastname>Villa</lastname>
+            <birthdate>1994-10-16</birthdate>
+        </Student>
+    </Students>
+
+    <!--                                                  COURSE TO CURSUSES-->
+    <CourseToCursuses>
+        <CourseToCursus cursus="1" course="4" />
+        <CourseToCursus cursus="1" course="5" />
+        <CourseToCursus cursus="1" course="6" />
+        <CourseToCursus cursus="2" course="2" />
+        <CourseToCursus cursus="1" course="8" />
+        <CourseToCursus cursus="2" course="3" />
+        <CourseToCursus cursus="3" course="7" />
+        <CourseToCursus cursus="3" course="8" />
+        <CourseToCursus cursus="4" course="1" />
+        <CourseToCursus cursus="4" course="9" />
+        <CourseToCursus cursus="4" course="10" />
+        <CourseToCursus cursus="2" course="8" />
+        <CourseToCursus cursus="4" course="8" />
+        <CourseToCursus cursus="2" course="11" />        
+    </CourseToCursuses>
+
+</Root>
+

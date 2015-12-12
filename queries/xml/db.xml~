@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Root>
+    <AttendedCourses>
+        <AttendedCourse student="1" course="1" grade="3.14"/>
+        <AttendedCourse student="1" course="9" grade="6"/>
+        <AttendedCourse student="2" course="1" grade="19.99"/>
+        <AttendedCourse student="2" course="9" grade="19.9998"/>
+        <AttendedCourse student="3" course="1" grade="15.99"/>
+        <AttendedCourse student="3" course="9" grade="14.9998"/>
+        <AttendedCourse student="4" course="1" grade="0"/>
+        <AttendedCourse student="4" course="9" grade="14"/>
+        <AttendedCourse student="5" course="3" grade="21"/>
+        <AttendedCourse student="5" course="2" grade="20"/>
+        <AttendedCourse student="6" course="3" grade="19.99"/>
+        <AttendedCourse student="6" course="2" grade="20"/>
+        <AttendedCourse student="7" course="4" grade="10"/>
+        <AttendedCourse student="7" course="6" grade="11"/>
+        <AttendedCourse student="7" course="7" grade="12"/>
+        <AttendedCourse student="8" course="4" grade="4"/>
+        <AttendedCourse student="8" course="6" grade="5"/>
+        <AttendedCourse student="8" course="7" grade="6"/>
+    </AttendedCourses>
+
+    <Courses>
+        <Course id="1" name="Maths" code="MATHS1"/>
+        <Course id="2" name="Algo" code="ALGO1"/>
+        <Course id="3" name="Prog Fonctionnelle" code="MARRE1"/>
+        <Course id="4" name="Bois" code="MATIEREDEGC1"/>
+        <Course id="5" name="Metal" code="BLINDGUARDIAN"/>
+        <Course id="6" name="Béton" code="MATIEREDEGC2"/>
+        <Course id="7" name="Saut à la corde" code="SPORT"/>
+        <Course id="8" name="PPI" code="MATIEREDEGC1"/>
+        <Course id="9" name="Analyse Fonctionnelle" code="ARRACHAGEDETETE-136"/>
+        <Course id="10" name="Espaces Hilbertiens" code="BLBLBLBL446"/>
+    </Courses>
+
+    <Cursuses>
+        <Cursus id="1">
+            <name>Genie Civil</name>
+        </Cursus>
+        <Cursus id="2">
+            <name>Informatique et Reseaux</name>
+        </Cursus>
+        <Cursus id="3">
+            <name>Sport Etude</name>
+        </Cursus>
+        <Cursus id="4">
+            <name>Genie Mathematique et Modélisation</name>
+        </Cursus>
+    </Cursuses>
+    
+    <Degrees>
+        <Degree id="1">
+            <name>Doctoral Student</name>
+        </Degree>
+        <Degree id="2">
+            <name>Teacher</name>
+        </Degree>
+        <Degree id="3">
+            <name>Teacher-Researcher</name>
+        </Degree>
+        <Degree id="4">
+            <name>Professor</name>
+        </Degree>
+    </Degrees>
+
+    <Groups>
+        <Group id="1" name="4 GMM 1" cursus="4"/>
+        <Group id="2" name="4 GMM 2" cursus="4"/>
+        <Group id="3" name="4 IR 1" cursus="2"/>
+        <Group id="4" name="4 GC SE 1" cursus="1"/>
+    </Groups>
+    <Teachings>
+        <Teaching teacher="14" course="3">
+            <hours>20</hours>
+        </Teaching>
+        <Teaching teacher="10" course="8">
+            <hours>50</hours>
+        </Teaching>
+        <Teaching teacher="11" course="2">
+            <hours>4</hours>
+        </Teaching>
+        <Teaching teacher="15" course="6">
+            <hours>37</hours>
+        </Teaching>
+    </Teachings>
+    <Teachers>
+        <Teacher id="10" degree="3">
+            <firstname>Christophe</firstname>
+            <lastname>Chassot</lastname>
+            <birthdate>1884-02-26</birthdate>
+        </Teacher>
+
+        <Teacher id="11" degree="3">
+            <firstname>Patrick</firstname>
+            <lastname>Esquirol</lastname>
+            <birthdate>1932-06-16</birthdate>
+        </Teacher>
+
+        <Teacher id="12" degree="1">
+            <firstname>Pierre</firstname>
+            <lastname>Curie</lastname>
+            <birthdate>1465-01-20</birthdate>
+        </Teacher>
+
+        <Teacher id="13" degree="4">
+            <firstname>Poulet au</firstname>
+            <lastname>curry</lastname>
+            <birthdate>1132-05-26</birthdate>
+        </Teacher>
+
+        <Teacher id="14" degree="3">
+            <firstname>Bernard</firstname>
+            <lastname>Haskell</lastname>
+            <birthdate>1894-01-26</birthdate>
+        </Teacher>
+
+        <Teacher id="15" degree="2">
+            <firstname>Patrick</firstname>
+            <lastname>Sebastien</lastname>
+            <birthdate>1960-01-26</birthdate>
+        </Teacher>
+    </Teachers>
+
+    <Groups>
+        <Group id="1" year="4" name="4 GMM 1" cursus="4"/>
+        <Group id="2" year="4" name="4 GMM 2" cursus="4"/>
+        <Group id="3" year="4" name="4 IR 1" cursus="2"/>
+        <Group id="4" year="4" name="4 GC SE 1" cursus="1"/>
+    </Groups>
+
+    <Students>
+        <Student id="1" group="1700">
+            <firstname>Jean</firstname>
+            <lastname>Dupont</lastname>
+            <birthdate>1994-02-26</birthdate>
+        </Student>
+
+        <Student id="2" group="1">
+            <firstname>Bernard</firstname>
+            <lastname>Tapis</lastname>
+            <birthdate>1994-06-16</birthdate>
+        </Student>
+
+        <Student id="3" group="2">
+            <firstname>Jean Claude</firstname>
+            <lastname>Van Damme</lastname>
+            <birthdate>1926-01-20</birthdate>
+        </Student>
+
+        <Student id="4" group="2">
+            <firstname>Bernadette</firstname>
+            <lastname>Chirac</lastname>
+            <birthdate>1942-10-26</birthdate>
+        </Student>
+
+        <Student id="5" group="3">
+            <firstname>Kévina</firstname>
+            <lastname>Banana</lastname>
+            <birthdate>1984-02-26</birthdate>
+        </Student>
+        
+        <Student id="6" group="3">
+            <firstname>Jean Bernard</firstname>
+            <lastname>Truc</lastname>
+            <birthdate>1984-02-26</birthdate>
+        </Student>
+         
+        <Student id="7" group="4">
+            <firstname>Le 7</firstname>
+            <lastname>Etoiles</lastname>
+            <birthdate>1984-02-26</birthdate>
+        </Student>
+         
+        <Student id="8" group="4">
+            <firstname>La réponse</firstname>
+            <lastname>D</lastname>
+            <birthdate>1984-02-26</birthdate>
+        </Student>
+    </Students>
+</Root>
+

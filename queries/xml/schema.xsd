@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:ns="projetxml" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Attended Course -->
+    <xs:element name="AttendedCourse">
+        <xs:complexType>
+            <xs:attribute name="student" type="xs:string" />
+            <xs:attribute name="course" type="xs:string" />
+            <xs:attribute name="grade" type="xs:string" />
+        </xs:complexType>
+        <!-- TODO keyrefs : student, course, grade -->
+    </xs:element>
+    <xs:complexType name="AttendedCoursesType">
+        <xs:sequence>
+            <xs:element ref="AttendedCourse" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Teachings -->
+    <xs:element name="Teaching">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hours" type="xs:integer" />
+            </xs:sequence>
+            <xs:attribute name="teacher" type="xs:string" />
+            <xs:attribute name="course" type="xs:string" />
+        </xs:complexType>
+        <!-- TODO keyrefs : teacher, course -->
+    </xs:element>
+    <xs:complexType name="TeachingsType">
+        <xs:sequence>
+            <xs:element ref="Teaching" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Students -->
+    <xs:element name="Student">
+	    <xs:complexType>
+            <xs:sequence>
+                <xs:element name="firstname" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="lastname" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="birthdate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+	        <xs:attribute name="id" type="xs:string" />
+		    <xs:attribute name="group" type="xs:string" />
+	    </xs:complexType>
+	    <xs:key name="StudentID">
+	       <xs:selector xpath="Student"/>
+	       <xs:field xpath="@id"/>
+	    </xs:key>
+        <!-- TODO keyrefs : group -->
+        <xs:keyref name="StudentGroupID" refer="GroupID">
+            <xs:selector xpath="Root/Students/Student" />
+            <xs:field xpath="@group" />
+        </xs:keyref>
+    </xs:element>
+    <xs:complexType name="StudentsType">
+        <xs:sequence>
+            <xs:element ref="Student" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Teachers -->
+    <xs:element name="Teacher">
+	    <xs:complexType>
+            <xs:sequence>
+                <xs:element name="firstname" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="lastname"  type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="birthdate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+	        <xs:attribute name="id" type="xs:string" />
+		    <xs:attribute name="degree" type="xs:string" />
+	    </xs:complexType>
+	    <xs:key name="TeacherID">
+	       <xs:selector xpath="Teacher"/>
+	       <xs:field xpath="@id"/>
+	    </xs:key>
+        <!-- TODO keyrefs : degree -->
+    </xs:element>
+
+    <xs:complexType name="TeachersType">
+        <xs:sequence>
+            <xs:element ref="Teacher" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Groups  -->
+    <xs:element name="Group">
+        <xs:complexType>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="year" type="xs:integer"/>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="cursus" type="xs:string" />
+        </xs:complexType>
+        <xs:key name="GroupID">
+            <xs:selector xpath="Group" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <!-- TODO keyrefs -->
+    </xs:element>
+    <xs:complexType name="GroupsType">
+        <xs:sequence>
+            <xs:element ref="Group" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- TYPE : Cursus -->
+    <xs:element name="Cursus">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" /> 
+        </xs:complexType>
+        <xs:key name="CursusID">
+            <xs:selector xpath="Cursus"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+    </xs:element>
+    <xs:complexType name="CursusesType">
+        <xs:sequence>
+            <xs:element ref="Cursus" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- TYPE : Degrees -->
+    <xs:element name="Degree">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" /> 
+        </xs:complexType>
+        <xs:key name="DegreeID">
+            <xs:selector xpath="Degree"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+    </xs:element>
+    <xs:complexType name="DegreesType">
+        <xs:sequence>
+            <xs:element ref="Degree" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- Courses  -->
+    <xs:element name="Course">
+        <xs:complexType>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="code" type="xs:string" />
+        </xs:complexType>
+        <xs:key name="CourseID">
+            <xs:selector xpath="Course" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <!-- TODO keyrefs -->
+    </xs:element>
+    <xs:complexType name="CoursesType">
+        <xs:sequence>
+            <xs:element ref="Course" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- CourseToCursuses  -->
+    <xs:element name="CourseToCursus">
+        <xs:complexType>
+            <xs:attribute name="cursus" type="xs:string" />
+            <xs:attribute name="course" type="xs:string" />
+        </xs:complexType>
+        <!-- TODO keyrefs -->
+    </xs:element>
+    <xs:complexType name="CourseToCursusesType">
+        <xs:sequence>
+            <xs:element ref="CourseToCursus" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    
+
+    <!-- Collections -->
+    <xs:element name="Students" type="StudentsType" />
+    <xs:element name="Teachers" type="TeachersType" />
+    <xs:element name="Groups" type="GroupsType" />
+    <xs:element name="Cursuses" type="CursusesType" />
+    <xs:element name="Degrees" type="DegreesType" />
+    <xs:element name="AttendedCourses" type="AttendedCoursesType" />
+    <xs:element name="Teachings" type="TeachingsType" />
+    <xs:element name="Courses" type="CoursesType"/>
+    <xs:element name="CourseToCursuses" type="CourseToCursusesType"/>
+    <xs:element name="Root">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Students" type="StudentsType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Teachers" type="TeachersType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Groups" type="GroupsType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Cursuses" type="CursusesType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Degrees" type="DegreesType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="AttendedCourses" type="AttendedCoursesType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Teachings" type="TeachingsType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Courses" type="CoursesType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="CourseToCursuses" type="CourseToCursusesType" minOccurs="0" maxOccurs="1"/>                
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
