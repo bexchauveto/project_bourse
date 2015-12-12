@@ -1,4 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Root>
-</Root>
-
+<root>
+    <Bourses>
+        <Bourse>
+            <BourseId>1</BourseId>
+            <Nom>Douala Stock Exchange</Nom>
+            <Code>DSX</Code>
+            <Adresse>
+                <NumRue>1450</NumRue>
+                <NomRue>Bd de la Liberté</NomRue>
+                <NomVille>Douala</NomVille>
+                <CodeVille></CodeVille>
+                <Pays>Cameroun</Pays>
+            </Adresse>
+        </Bourse>
+        <Bourse>
+            <BourseId>2</BourseId>
+            <Nom>Bourse de Palestine</Nom>
+            <Code>PEX</Code>
+            <Adresse>
+                <NumRue>43</NumRue>
+                <NomRue>Wasfi Al Tal St</NomRue>
+                <NomVille>Naplouse</NomVille>
+                <CodeVille>11118</CodeVille>
+                <Pays>Jordanie</Pays>
+            </Adresse>
+        </Bourse>
+        <Bourse>
+            <BourseId>3</BourseId>
+            <Nom>Bourse de Chypre</Nom>
+            <Code>CSE</Code>
+            <Adresse>
+                <NumRue>71</NumRue>
+                <NomRue>Lordou Vironos Avenue</NomRue>
+                <NomVille>Nicosie</NomVille>
+                <CodeVille>1309</CodeVille>
+                <Pays>Chypre</Pays>
+            </Adresse>
+        </Bourse>
+        <Bourse>
+            <BourseId>4</BourseId>
+            <Nom>Bourse de valeurs de Colombie</Nom>
+            <Code>BVC</Code>
+            <Adresse>
+                <NumRue>21</NumRue>
+                <NomRue>Carrera 7</NomRue>
+                <NomVille>Nicosie</NomVille>
+                <CodeVille>1309</CodeVille>
+                <Pays>Colombie</Pays>
+            </Adresse>
+        </Bourse>
+    </Bourses>
+    <Entreprises>
+        <Entreprise>
+            <EntrepriseId>1</EntrepriseId>
+            <Nom>Jerusalem Pharmaceuticals</Nom>
+            <Secteur>Médicaments</Secteur>
+            <AnneeCreation>2003</AnneeCreation>
+            <Symbole>JPH</Symbole>
+            <Logo></Logo>
+            <SiteWeb>http://www.jepharm.ps/</SiteWeb>
+            <PlaceBoursiere>2</PlaceBoursiere>
+        </Entreprise>
+    </Entreprises>
+    <Actions>
+    </Actions>
+</root>
