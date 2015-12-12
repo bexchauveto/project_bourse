@@ -3,7 +3,7 @@ xquery version "3.0";
 {
     for $action in doc("xml/db.xml")//Action
     for $actionn in doc("xml/db.xml")//Action
-    where $action/@Date = "2015-12-12" and $action/ValCloture > $actionn/ValCloture
+    where $action/@Date = "2015-12-12" and $action/@Nom ne $actionn/@Nom and $action/ValCloture > $actionn/ValCloture
     return  <Action Nom="{$action/@Nom}" Date="{$action/@Date}">
                 {$action/ValOuverture}
                 {$action/ValMaximum}
