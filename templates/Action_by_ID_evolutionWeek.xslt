@@ -30,7 +30,18 @@
 						<td><xsl:value-of select="@Nom" /></td>
 						<td><xsl:value-of select="@Date" /></td>
 						<td><xsl:value-of select="ValOuverture" /></td>
-						<td><xsl:value-of select="ValCloture" /></td>
+						<td>
+							<xsl:if test="ValCloture &lt; ValOuverture">
+								<span style="color: red;">
+									<xsl:value-of select="ValCloture" />
+								</span>
+							</xsl:if>
+							<xsl:if test="ValCloture &gt; ValOuverture">
+								<span style="color: green;">
+									<xsl:value-of select="ValCloture" />
+								</span>
+							</xsl:if>
+						</td>
 						<td><xsl:value-of select="ValMinimum" /></td>
 						<td><xsl:value-of select="ValMaximum" /></td>
 						<td><xsl:value-of select="NbEchange" /></td>
@@ -40,5 +51,3 @@
 		</table>
 	</li>
 </xsl:template>
-
-
