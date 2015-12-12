@@ -1,1 +1,0 @@
-<?php header("Location: ./controllers/controlIndex.php"); ?>
