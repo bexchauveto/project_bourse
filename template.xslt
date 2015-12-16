@@ -38,8 +38,10 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Actions <span class="caret"></span></a>
 									<ul class="dropdown-menu">
+										<li><a href="action_all.html">Toutes</a></li>
 										<li><a href="Action_by_ID_evolutionWeek.html">Résumé de la semaine pour une action</a></li>
-										<li><a href="action_plus_performante_secteur.html">Action la plus performante pour une secteur</a></li>
+										<li><a href="action_plus_performante_secteur.html">Action la plus performante du jour pour un secteur</a></li>
+										<li><a href="action_plus_performante_place.html">Action la plus performante du jour pour une place boursière</a></li>
 										<li><a href="action_la_plus_cher_la_moins_cher.html">Action la plus cher et la moins cher d'une journée</a></li>
 										<li><a href="action_la_plus_vendue_la_moins_vendue.html">Action la plus vendue et la moins vendue</a></li>
 									</ul>

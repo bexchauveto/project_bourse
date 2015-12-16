@@ -1,21 +1,21 @@
 <xsl:template name="main">
 	<div class="container">
-		<h1>Liste des étudiants par année : </h1>
+		<h1>Action la plus performante par place le 06-12-2015.</h1>
 		<ul class="list-group">
-		<xsl:apply-templates select="/Actions" />
+		<xsl:apply-templates select="/Bourses/Bourse" />
 		</ul>
 	</div>
 </xsl:template>
 
-<xsl:template match="/Actions">
+<xsl:template match="/Bourses/Bourse">
 	<li class="list-group-item">
-		<h5>
-			Liste de tous les étudiants.
-		</h5>
+		<h4>
+			<xsl:value-of select="@bourse" /> :
+		</h4>
 		<table class="table table-hover table-stripped table-bordered">
 			<thead>
 				<tr>
-					<th class="active col-md-3">Nom</th>
+                    <th class="active col-md-3">Nom</th>
 					<th class="active col-md-3">Date</th>
 					<th class="active col-md-3">Valeur d'ouverture</th>
 					<th class="active col-md-3">Valeur de fermeture</th>
@@ -27,10 +27,24 @@
 			<tbody>
 				<xsl:for-each select="Action">
 		 			<tr>
-						<td><xsl:value-of select="@Nom" /></td>
+                        <td><xsl:value-of select="@Nom" /></td>
 						<td><xsl:value-of select="@Date" /></td>
 						<td><xsl:value-of select="ValOuverture" /></td>
-						<td><xsl:value-of select="ValCloture" /></td>
+						<td>
+							<xsl:choose>
+							    <xsl:when test="ValCloture &lt; ValOuverture">
+									<span style="color: red;">
+    									<xsl:value-of select="ValCloture" />
+    								</span>
+							    </xsl:when>
+
+							   <xsl:otherwise>
+								   <span style="color: green;">
+   									<xsl:value-of select="ValCloture" />
+   								</span>
+							   </xsl:otherwise>
+						   </xsl:choose>
+						</td>
 						<td><xsl:value-of select="ValMinimum" /></td>
 						<td><xsl:value-of select="ValMaximum" /></td>
 						<td><xsl:value-of select="NbEchange" /></td>
@@ -40,5 +54,3 @@
 		</table>
 	</li>
 </xsl:template>
-
-

@@ -255,5 +255,71 @@
             <ValCloture>180</ValCloture>
             <NbEchange>5000</NbEchange>
         </Action>
+        <Action Nom="EDA" Date="2015-12-07">
+            <ActionId>16</ActionId>
+            <ValOuverture>180</ValOuverture>
+            <ValMaximum>200</ValMaximum>
+            <ValMinimum>170</ValMinimum>
+            <ValCloture>181</ValCloture>
+            <NbEchange>4800</NbEchange>
+        </Action>
+        <Action Nom="EDA" Date="2015-12-08">
+            <ActionId>17</ActionId>
+            <ValOuverture>181</ValOuverture>
+            <ValMaximum>250</ValMaximum>
+            <ValMinimum>175</ValMinimum>
+            <ValCloture>242</ValCloture>
+            <NbEchange>3854</NbEchange>
+        </Action>
+
+        <Action Nom="GAA" Date="2015-12-06">
+            <ActionId>18</ActionId>
+            <ValOuverture>150</ValOuverture>
+            <ValMaximum>200</ValMaximum>
+            <ValMinimum>150</ValMinimum>
+            <ValCloture>180</ValCloture>
+            <NbEchange>5000</NbEchange>
+        </Action>
+        <Action Nom="GAA" Date="2015-12-07">
+            <ActionId>19</ActionId>
+            <ValOuverture>180</ValOuverture>
+            <ValMaximum>200</ValMaximum>
+            <ValMinimum>170</ValMinimum>
+            <ValCloture>181</ValCloture>
+            <NbEchange>4800</NbEchange>
+        </Action>
+        <Action Nom="GAA" Date="2015-12-08">
+            <ActionId>20</ActionId>
+            <ValOuverture>181</ValOuverture>
+            <ValMaximum>250</ValMaximum>
+            <ValMinimum>175</ValMinimum>
+            <ValCloture>242</ValCloture>
+            <NbEchange>3854</NbEchange>
+        </Action>
+
+        <Action Nom="APOL" Date="2015-12-06">
+            <ActionId>21</ActionId>
+            <ValOuverture>15</ValOuverture>
+            <ValMaximum>20</ValMaximum>
+            <ValMinimum>15</ValMinimum>
+            <ValCloture>18</ValCloture>
+            <NbEchange>500</NbEchange>
+        </Action>
+        <Action Nom="APOL" Date="2015-12-07">
+            <ActionId>22</ActionId>
+            <ValOuverture>18</ValOuverture>
+            <ValMaximum>20</ValMaximum>
+            <ValMinimum>17</ValMinimum>
+            <ValCloture>18</ValCloture>
+            <NbEchange>480</NbEchange>
+        </Action>
+        <Action Nom="APOL" Date="2015-12-08">
+            <ActionId>23</ActionId>
+            <ValOuverture>18</ValOuverture>
+            <ValMaximum>25</ValMaximum>
+            <ValMinimum>17</ValMinimum>
+            <ValCloture>24</ValCloture>
+            <NbEchange>385</NbEchange>
+        </Action>
     </Actions>
 </root>

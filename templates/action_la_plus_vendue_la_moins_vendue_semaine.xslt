@@ -31,16 +31,19 @@
 						<td><xsl:value-of select="@Date" /></td>
 						<td><xsl:value-of select="ValOuverture" /></td>
 						<td>
-							<xsl:if test="ValCloture &lt; ValOuverture">
-								<span style="color: red;">
-									<xsl:value-of select="ValCloture" />
-								</span>
-							</xsl:if>
-							<xsl:if test="ValCloture &gt; ValOuverture">
-								<span style="color: green;">
-									<xsl:value-of select="ValCloture" />
-								</span>
-							</xsl:if>
+							<xsl:choose>
+							    <xsl:when test="ValCloture &lt; ValOuverture">
+									<span style="color: red;">
+    									<xsl:value-of select="ValCloture" />
+    								</span>
+							    </xsl:when>
+
+							   <xsl:otherwise>
+								   <span style="color: green;">
+   									<xsl:value-of select="ValCloture" />
+   								</span>
+							   </xsl:otherwise>
+						   </xsl:choose>
 						</td>
 						<td><xsl:value-of select="ValMinimum" /></td>
 						<td><xsl:value-of select="ValMaximum" /></td>
