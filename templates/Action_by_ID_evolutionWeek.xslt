@@ -10,7 +10,7 @@
 <xsl:template match="/Actions">
 	<li class="list-group-item">
 		<h5>
-			Liste des actions pour la semaine du 06/12/2015 au 12/12/2015.
+			Liste des actions pour la semaine du 06/12/2015 au 12/12/2015 pour l'action <xsl:value-of select="@Nom" />.
 		</h5>
 		<table class="table table-hover table-stripped table-bordered">
 			<thead>
