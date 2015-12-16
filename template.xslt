@@ -38,7 +38,7 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Actions <span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="teachings_teacher.html">Par enseignant</a></li>
+										<li><a href="Action_by_ID_evolutionWeek.html">Par semaine</a></li>
 									</ul>
 								</li>
 								<!--<li class="dropdown">
