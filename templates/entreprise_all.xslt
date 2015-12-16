@@ -36,7 +36,7 @@
                             </xsl:attribute>
                             <xsl:value-of select="SiteWeb"/>
                         </xsl:element></td>
-                        <td><xsl:value-of select="PlaceBoursiere" /></td>
+                        <td><xsl:value-of select="NomBourse" /></td>
                     </tr>
                 </xsl:for-each>
             </tbody>
