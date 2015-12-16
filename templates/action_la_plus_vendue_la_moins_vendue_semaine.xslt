@@ -1,6 +1,6 @@
 <xsl:template name="main">
 	<div class="container">
-		<h1>L'action la plus performante dans le secteur de la Télécommunications pour un jour donnée : </h1>
+		<h1>Liste de l'action la plus vendue et de la moins vendue sur une semaine: </h1>
 		<ul class="list-group">
 		<xsl:apply-templates select="/Actions" />
 		</ul>
@@ -10,7 +10,7 @@
 <xsl:template match="/Actions">
 	<li class="list-group-item">
 		<h5>
-			Action la plus performante dans le secteur des Télécommunications le 06-12-2015.
+			Action la plus vendue et action la moins vendue sur la semaine du 06-12-2015 au 12-12-2015.
 		</h5>
 		<table class="table table-hover table-stripped table-bordered">
 			<thead>

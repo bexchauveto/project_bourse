@@ -3,9 +3,9 @@ xquery version "3.0";
 {
     let $doc := doc("xml/db.xml")
     let $action1 := $doc//Action[@Date="2015-12-06"]
-    for $action in $doc//Action,
-        $entreprise in $doc//Entreprise    
-    where $action/@Nom = $entreprise/Symbole and max($action1/ValCloture) = $action/ValCloture and $entreprise/Secteur = "Telecommunications" and $action/@Date = "2015-12-06"
+    for $action in $doc//Action
+    where $action/@Date = "2015-12-06" and (max($action1/ValCloture) = $action/ValCloture or min($action1/ValCloture) = $action/ValCloture)
+    order by $action/ValCloture
     return  <Action Nom="{$action/@Nom}" Date="{$action/@Date}">
                 {$action/ValOuverture}
                 {$action/ValMaximum}
