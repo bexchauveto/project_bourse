@@ -246,5 +246,14 @@
             <ValCloture>54</ValCloture>
             <NbEchange>120</NbEchange>
         </Action>
+
+        <Action Nom="EDA" Date="2015-12-06">
+            <ActionId>15</ActionId>
+            <ValOuverture>150</ValOuverture>
+            <ValMaximum>200</ValMaximum>
+            <ValMinimum>150</ValMinimum>
+            <ValCloture>180</ValCloture>
+            <NbEchange>5000</NbEchange>
+        </Action>
     </Actions>
 </root>
