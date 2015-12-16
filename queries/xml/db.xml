@@ -64,7 +64,7 @@
         <Entreprise>
             <EntrepriseId>2</EntrepriseId>
             <Nom>Palestine Telecommunications</Nom>
-            <Secteur>Télécommunications</Secteur>
+            <Secteur>Telecommunications</Secteur>
             <AnneeCreation>1997</AnneeCreation>
             <Symbole>PALTEL</Symbole>
             <Logo></Logo>
@@ -124,7 +124,7 @@
         <Entreprise>
             <EntrepriseId>8</EntrepriseId>
             <Nom>Edatel S.A. E.S.P.</Nom>
-            <Secteur>Télécommunications</Secteur>
+            <Secteur>Telecommunications</Secteur>
             <AnneeCreation>1980</AnneeCreation>
             <Symbole>EDA</Symbole>
             <Logo></Logo>
